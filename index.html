@@ -3,56 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DEV Community</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-32x32.png"
+    />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="devImage">
-        <img
-          class="site-logo__img"
-          src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-          alt="DEV Community"
-        />
-      </div>
-      <div>
-        <input
-          class="entradaBusqueda"
-          type="text"
-          id=""
-          name="q"
-          placeholder="Busqueda..."
-          autocomplete="off"
-          aria-label="Search term"
-        />
-        <div class="summitButton">
-          <button type="submit" aria-label="Search" class="busqueda">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              class="crayons-icon c-btn__icon"
-              focusable="false"
-            >
-              <path
-                d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
-              ></path>
-            </svg>
-          </button>
-        </div>
-    </input>
-        <a href="#" class="login"> Log in </a>
-        <a
-          href="#"
-          data-tracking-id=""
-          data-tracking-source="top_navbar"
-          class="createAccount"
-        >
-          Create account
-        </a>
-      </div>
+    <!--conteneder del nav-->
+    <nav class="nav-container">
+      <ul class="left-side">
+        <li class="logo">
+          <a href="https://dev.to/">
+            <img
+              class="imagenLogo"
+              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="container-busqueda">
+          <form action="get" action="/search" accept-charset="UTF-8">
+            <div class="campoBusqueda">
+              <input
+                type="text"
+                placeholder="Busqueda..."
+                class="inputbusqueda"
+              />
+              <button type="submit" class="butonBusqueda">
+                <svg xmlns="http://www.w3.org/2000/svg" focusable="false">
+                  <path
+                    d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </li>
+      </ul>
+      <ul class="right-side">
+        <li class="login">
+          <a
+            href="https://dev.to/#:~:text=Search...-,Log%20in,-Create%20account"
+          >
+            Login
+          </a>
+        </li>
+        <li class="createAccount">
+          <a
+            href="https://dev.to/#:~:text=Log%20in-,Create%20account,-DEV%20Community"
+          >
+            Create account</a
+          >
+        </li>
+      </ul>
     </nav>
     <!--seccion Luis-->
     <!--seccion Jorge-->

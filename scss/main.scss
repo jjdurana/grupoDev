@@ -1,30 +1,118 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
+  font-family: "Roboto", sans-serif;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: start;
+//navbar//
+.nav-container {
   background-color: white;
-  height: 40px;
-  color: white;
-  padding: 20px 10px;
-  position: fixed;
+  font-family: "Roboto", sans-serif;
   width: 100%;
-  top: 0;
-  .entradaBusqueda {
-    position: relative;
-    .summitButton {
-      position: absolute;
-      right: 0;
-    }
+  height: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  padding-bottom: 20px;
+}
+
+.left-side,
+.right-side {
+  list-style-type: none;
+  padding: 10px 10px;
+  height: 50px;
+  display: flex;
+}
+.left-side li,
+.right-side li {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.logo {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px 5px;
+  vertical-align: middle;
+  .imagenLogo {
+    object-fit: contain;
+    width: auto;
+    max-width: 100%;
   }
+}
+
+.container-busqueda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 10px;
+}
+.campoBusqueda {
+  display: flex;
+  justify-content: space-between;
+}
+.inputbusqueda {
+  display: flex;
+  border: 0;
+  width: 350px;
+  height: 30px;
+  left: 0;
+}
+button {
+  border-radius: 5px;
+  border: 0;
+  background-color: transparent;
+  height: 24px;
+  width: 24px;
+}
+button:hover {
+  background-color: rgb(235, 236, 253);
+  height: 30px;
+  width: 30px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 83px;
+  height: 40px;
+  border: 1xp solid white;
+  background-color: white;
+  border-radius: 10xp;
+}
+.login:hover {
+  background-color: rgb(235, 236, 253);
+}
+.createAccount {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 145px;
+  height: 40px;
+  border: 1px solid rgb(57, 73, 223);
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(57, 73, 223);
+}
+.createAccount:hover {
+  background-color: rgb(57, 73, 223);
 }
