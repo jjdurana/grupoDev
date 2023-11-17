@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+  background-color: white;
+  height: 40px;
+  color: white;
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar .entradaBusqueda {
+  position: relative;
+}
+.navbar .entradaBusqueda .summitButton {
+  position: absolute;
+  right: 0;
+}/*# sourceMappingURL=main.css.map */
