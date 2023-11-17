@@ -38,7 +38,7 @@ body {
   margin-top: 0px;
   margin-bottom: 10px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .logo {
   position: relative;
@@ -84,11 +84,7 @@ button {
   height: 24px;
   width: 24px;
 }
-button:hover {
-  background-color: rgb(235, 236, 253);
-  height: 30px;
-  width: 30px;
-}
+
 .login {
   display: flex;
   align-items: center;
@@ -99,8 +95,11 @@ button:hover {
   background-color: white;
   border-radius: 10xp;
 }
-.login:hover {
-  background-color: rgb(235, 236, 253);
+
+.login a:link,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 .createAccount {
   display: flex;
@@ -113,6 +112,21 @@ button:hover {
   text-decoration: none;
   color: rgb(57, 73, 223);
 }
+.createAccount a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+//hovers//
 .createAccount:hover {
   background-color: rgb(57, 73, 223);
+}
+.login:hover {
+  background-color: rgb(235, 236, 253);
+}
+button svg:hover {
+  background-color: rgb(235, 236, 253);
+  height: 30px;
+  width: 30px;
 }
