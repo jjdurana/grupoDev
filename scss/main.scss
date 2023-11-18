@@ -21,6 +21,7 @@ body {
   align-items: center;
   padding: 10px 10px;
   padding-bottom: 20px;
+  top: 0;
 }
 
 .left-side,
@@ -75,7 +76,8 @@ body {
   border: 0;
   width: 350px;
   height: 30px;
-  left: 0;
+  left: 0px;
+  border-color: transparent;
 }
 button {
   border-radius: 5px;
@@ -94,6 +96,7 @@ button {
   border: 1xp solid white;
   background-color: white;
   border-radius: 10xp;
+  color: black;
 }
 
 .login a:link,
@@ -124,9 +127,103 @@ a:active {
 }
 .login:hover {
   background-color: rgb(235, 236, 253);
+  border-radius: 10px;
+}
+button svg {
+  height: 30px;
+  width: 30px;
 }
 button svg:hover {
   background-color: rgb(235, 236, 253);
   height: 30px;
-  width: 30px;
+  width: 35px;
+  border-radius: 10px;
+}
+
+.containerMiddle {
+  width: 90%;
+  /* centramos usando margenes laterales */
+  margin: 0 auto;
+}
+
+.cajaFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.articulo {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+.mainContainer {
+  margin-top: 45px;
+  padding: 10px;
+  height: 89vh;
+  /* position: relative; */
+  /* top: 55px; */
+}
+
+.hotTopics {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 8px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  span {
+    text-align: left;
+    margin: 0px 0px;
+    margin-left: 0px;
+    padding: 10px;
+    color: black;
+  }
+}
+.hotTopics a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+.relevant a {
+  font-weight: 700;
+}
+.latest a {
+  font-weight: lighter;
+}
+.contenedorImagen {
+  width: 90%;
+  padding: 10px;
+}
+
+.imagenArticle {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contenedorAuthor span {
+  color: #cdc9c9;
+}
+
+.contenedorTitulo {
+  padding: 8px;
+}
+@media screen and (min-width: 600px) {
+  .cajaFlex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .articulo {
+    width: 45%;
+    margin: 10px 10px;
+  }
 }
