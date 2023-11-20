@@ -21,7 +21,7 @@
   <body>
     <!--conteneder del nav-->
     <nav class="nav-container">
-      <ul class="left-side">
+      <ul class="left-sideNav">
         <li class="logo">
           <a href="https://dev.to/">
             <img
@@ -50,7 +50,7 @@
           </form>
         </li>
       </ul>
-      <ul class="right-side">
+      <ul class="right-sideNav">
         <li class="login">
           <a
             href="https://dev.to/#:~:text=Search...-,Log%20in,-Create%20account"
@@ -71,14 +71,16 @@
     <!--seccion Jorge-->
     <!--Relevant latest top-->
     <section class="containerMiddle mainContainer">
+      <div class="contenedorHotTopics">
       <div class="hotTopics">
         <span class="relevant"> <a href="https://dev.to/">Relevant</a></span>
         <span class="latest"><a href="https://dev.to/latest">Latest</a></span>
         <span class="top"><a href="https://dev.to/top/week">Top</a></span>
       </div>
+      </div>
 
       <main>
-        <div class="cajaFlex">
+        <div class="cajaFlex Hero">
           <article class="articulo">
             <!-- contenido del post -->
             <div class="contenedorImagen">
@@ -88,18 +90,341 @@
                 alt="articulo"
               />
             </div>
-            <div class="contenedorIconAuthor">
-              <img
-                src="https://res.cloudinary.com/practicaldev/image/fetch/s--TsC8GsPG--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/314626/ff82f983-6c57-4b0f-bfd4-624b91e9a9e8.jpeg"
-                alt=""
-              />
-              <div class="contenedorFlexAuthor">
-                <div class="contenedorAuthor">
-                  <span> Mateusz Charytoniuk </span>
-                  <span> Nov 16</span>
+            <div class="contenedorFlexAuthor">
+              <div class="contenedorIcon">
+                <img
+                  class="iconAuthor"
+                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--TsC8GsPG--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/314626/ff82f983-6c57-4b0f-bfd4-624b91e9a9e8.jpeg"
+                />
+              </div>
+              <div class="contenedorAuthor">
+                <span>
+                  Mateusz Charytoniuk <br />
+                  Nov 16</span
+                >
+              </div>
+            </div>
+            <div class="contenedorFlexTitulo">
+              <a href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5"
+                ><h2>To Junior Developers</h2></a
+              >
+              <div class="tagsContainer">
+                <a class="programming" href="https://dev.to/t/programming"
+                  >#programing</a
+                >
+                <a class="beginners" href="https://dev.to/t/beginners"
+                  >#beginners</a
+                ><a class="carrer" href="https://dev.to/t/career">#carrer</a
+                ><a class="productivity" href="https://dev.to/t/productivity"
+                  >#productivity</a
+                >
+              </div>
+            </div>
+            <div class="contenedorFlexInteractions">
+              <div class="reactions">
+                <div class="emojis">
+                  <span
+                    ><img
+                      src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                      width="18"
+                      height="18" /></span
+                  ><span
+                    ><img
+                      src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                      width="18"
+                      height="18"
+                  /></span>
                 </div>
-                <div class="contenedorTitulo">
-                  <h3>To Junior Developers</h3>
+                <a href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5">
+                  339 reactions</a
+                >
+                <div class="contenedorComments">
+                <img><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a6p7p4dwh3koqp6q0wzdoop4g8hojzp7" class="crayons-icon"><title id="a6p7p4dwh3koqp6q0wzdoop4g8hojzp7">Comments</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></img>
+                <a
+                  href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5#comments"
+                  >104 comments</a
+                ></div>
+                <div class="contenedorBookmark">
+                <span>4 min read</span>
+                <button class="botonBookmarks">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="cajaFlex Second">
+          <article class="articulo">
+            <!-- contenido del post -->
+
+            <div class="contenedorFlexAuthor">
+              <div class="contenedorIcon">
+                <img
+                  class="iconAuthor"
+                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--g-OhOyJs--/c_fill,f_auto,fl_progressive,h_90,q_66,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/4224/9191d30a-cfa3-4f20-804a-ab1beeddec8e.gif"
+                />
+              </div>
+              <div class="contenedorAuthor">
+                <span>
+                  Bap for Quine <br />
+                  Nov 16</span
+                >
+              </div>
+            </div>
+            <div class="contenedorFlexTitulo">
+              <a href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5"
+                ><h2>🙌 7 Tips to Build Your GigHub Profile Like a Pro 🚀</h2></a
+              >
+              <div class="tagsContainer">
+                <a class="webdev" href="https://dev.to/t/webdev"
+                  >#webdev</a
+                >
+                <a class="javascript" href="https://dev.to/t/javascript"
+                  >#javascript</a
+                ><a class="programming" href="https://dev.to/t/programming">#programming</a
+                ><a class="tutorial" href="https://dev.to/t/tutorial"
+                  >#tutorial</a
+                >
+              </div>
+            </div>
+            <div class="contenedorFlexInteractions">
+              <div class="reactions">
+                <div class="emojis">
+                  <span
+                    ><img
+                      src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                      width="18"
+                      height="18" /></span
+                  ><span
+                    ><img
+                      src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                </div>
+                <a href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5">
+                  248 reactions</a
+                >
+                <div class="contenedorComments">
+                <img><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a6p7p4dwh3koqp6q0wzdoop4g8hojzp7" class="crayons-icon"><title id="a6p7p4dwh3koqp6q0wzdoop4g8hojzp7">Comments</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></img>
+                <a
+                  href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5#comments"
+                  >43 comments</a
+                ></div>
+                <div class="contenedorBookmark">
+                <span>5 min read</span>
+                <button class="botonBookmarks">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="cajaFlex Third">
+          <article class="articulo">
+            <!-- contenido del post -->
+
+            <div class="contenedorFlexAuthor">
+              <div class="contenedorIcon">
+                <img
+                  class="iconAuthor"
+                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--u1HCeQNA--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1207464/afd8b843-7b7a-4e32-a693-2e87e33d0809.jpg"
+                />
+              </div>
+              <div class="contenedorAuthor">
+                <span>
+                  Lev Nahar <br />
+                  Nov 19</span
+                >
+              </div>
+            </div>
+            <div class="contenedorFlexTitulo">
+              <a href="https://dev.to/lnahrf/stop-grinding-leetcode-a-different-take-on-landing-your-first-developer-job-12pd"
+                ><h2>Stop grinding LeetCode! A different take on landing your first developer job</h2></a
+              >
+              <div class="tagsContainer">
+                <a class="webdev" href="https://dev.to/t/webdev"
+                  >#webdev</a
+                >
+                <a class="beginners" href="https://dev.to/t/beginners"
+                  >#beginners</a
+                ><a class="programming" href="https://dev.to/t/programming">#programming</a
+                ><a class="tutorial" href="https://dev.to/t/career"
+                  >#career</a
+                >
+              </div>
+            </div>
+            <div class="contenedorFlexInteractions">
+              <div class="reactions">
+                <div class="emojis">
+                  <span
+                    ><img
+                      src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                      width="18"
+                      height="18" /></span
+                  ><span
+                    ><img
+                      src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                </div>
+                <a href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5">
+                  4 reactions</a
+                >
+                <div class="contenedorComments">
+                <img><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a6p7p4dwh3koqp6q0wzdoop4g8hojzp7" class="crayons-icon"><title id="a6p7p4dwh3koqp6q0wzdoop4g8hojzp7">Comments</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></img>
+                <a
+                  href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5#comments"
+                  >3 comments</a
+                ></div>
+                <div class="contenedorBookmark">
+                <span>5 min read</span>
+                <button class="botonBookmarks">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="cajaFlex Fourth">
+          <article class="articulo">
+            <!-- contenido del post -->
+
+            <div class="contenedorFlexAuthor">
+              <div class="contenedorIcon">
+                <img
+                  class="iconAuthor"
+                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--3AcxpERR--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/139641/57beaebb-75c9-418a-8488-9cc8702d50d4.jpeg"
+                />
+              </div>
+              <div class="contenedorAuthor">
+                <span>
+                  Barbara <br />
+                  Nov 19</span
+                >
+              </div>
+            </div>
+            <div class="contenedorFlexTitulo">
+              <a href="https://dev.to/lnahrf/stop-grinding-leetcode-a-different-take-on-landing-your-first-developer-job-12pd"
+                ><h2>Kubernetes Security</h2></a
+              >
+              <div class="tagsContainer">
+                <a class="security" href="https://dev.to/t/security"
+                  >#security</a
+                >
+                <a class="rbac" href="https://dev.to/t/rbac"
+                  >#rbac</a
+                ><a class="admissioncontrol" href="https://dev.to/t/admissioncontrol">#admissioncontrol</a
+                ><a class="networkpolicies" href="https://dev.to/t/networkpolicies"
+                  >#networkpolicies</a
+                >
+              </div>
+            </div>
+            <div class="contenedorFlexInteractions">
+              <div class="reactions">
+                <div class="emojis">
+                  <span
+                    ><img
+                      src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                      width="18"
+                      height="18" /></span
+                  ><span
+                    ><img
+                      src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                  <span
+                    ><img
+                      src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                      width="18"
+                      height="18"
+                  /></span>
+                </div>
+                <a href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5">
+                  4 reactions</a
+                >
+                <div class="contenedorComments">
+                <img><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a6p7p4dwh3koqp6q0wzdoop4g8hojzp7" class="crayons-icon"><title id="a6p7p4dwh3koqp6q0wzdoop4g8hojzp7">Comments</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></img>
+                <a
+                  href="https://dev.to/mcharytoniuk/to-junior-developers-2ec5#comments"
+                  >3 comments</a
+                ></div>
+                <div class="contenedorBookmark">
+                <span>5 min read</span>
+                <button class="botonBookmarks">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                </button>
                 </div>
               </div>
             </div>
