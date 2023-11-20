@@ -171,8 +171,10 @@ button svg:hover {
   align-items: center;
   padding: 0px;
   margin: 20px 0;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
 }
 
 .mainContainer {
@@ -323,6 +325,42 @@ a:active {
   background-color: rgb(233, 233, 244);
   border-radius: 10px;
 }
+.webdev:hover {
+  border: 1px solid rgb(197, 177, 200);
+  background-color: rgb(238, 233, 239);
+  border-radius: 10px;
+}
+.javascript:hover {
+  border: 1px solid rgb(241, 245, 175);
+  background-color: rgb(254, 252, 232);
+  border-radius: 10px;
+}
+.tutorial:hover {
+  border: 1px solid rgb(255, 255, 246);
+  background-color: rgb(254, 252, 232);
+  border-radius: 10px;
+}
+.security:hover {
+  border: 1px solid rgb(175, 228, 211);
+  background-color: rgb(232, 247, 242);
+  border-radius: 10px;
+}
+.rbac:hover {
+  background-color: rgb(235, 236, 253);
+  border: 1px solid rgb(57, 73, 223);
+  border-radius: 10px;
+}
+
+.admissioncontrol:hover {
+  background-color: rgb(235, 236, 253);
+  border: 1px solid rgb(57, 73, 223);
+  border-radius: 10px;
+}
+.networkpolicies:hover {
+  background-color: rgb(235, 236, 253);
+  border: 1px solid rgb(57, 73, 223);
+  border-radius: 10px;
+}
 
 //interacciones tarjeta
 .contenedorFlexInteractions {
@@ -333,6 +371,7 @@ a:active {
   height: 50px;
   justify-content: center;
   .reactions {
+    width: 100%;
     display: flex;
     margin-left: 0px;
     align-items: center;
@@ -355,12 +394,13 @@ a:active {
         display: flex;
         flex: 1 1 auto;
         flex-basis: content;
+        padding-left: 10px;
       }
       a {
         display: flex;
         flex-basis: content;
         flex: 1 1 auto;
-        padding-left: 10px;
+        padding-left: 0px;
       }
     }
     .contenedorBookmark {
@@ -379,7 +419,7 @@ a:active {
         direction: flex;
         align-items: center;
         justify-items: center;
-        padding-left: 20px;
+        justify-content: flex-end;
       }
     }
   }
