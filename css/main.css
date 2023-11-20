@@ -458,7 +458,10 @@ a:active {
     align-items: center;
   }
   .articulo {
-    width: 45%;
+    width: 60%;
     margin: 10px 10px;
+  }
+  .mainContainer {
+    width: 60%;
   }
 }/*# sourceMappingURL=main.css.map */
