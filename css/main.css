@@ -53,7 +53,7 @@ body {
 }
 .logo .imagenLogo {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: auto;
   max-width: 100%;
 }
@@ -240,4 +240,42 @@ a:active {
     width: 45%;
     margin: 10px 10px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
+.tarjeta {
+  height: 440px;
+  flex-direction: ;
+  width: 300px;
+  border: solid black;
+  border-radius: 10px;
+  list-style: none;
+}
+.new {
+  background-color: yellow;
+  margin-left: 10px;
+  height: 20px;
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul li {
+  list-style: none;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.comentarios {
+  color: rgba(0, 0, 0, 0.541);
+  margin-left: 10px;
+}
+
+.gridt {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.caja1 {
+  grid-column: 1 / 4;
+  background-color: yellow;
+  grid-row: 1 / 4;
+}
