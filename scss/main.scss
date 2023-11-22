@@ -152,6 +152,17 @@ button svg:hover {
   width: 35px;
   border-radius: 10px;
 }
+//flexPadre//
+.flexPadre {
+  display: flexbox;
+  flex-direction: row;
+  .cajaFlexIzquierda {
+    flex: 1 1 auto;
+  }
+  .mainContainer {
+    flex: 4 1 auto;
+  }
+}
 
 //seccion izquierda
 .cajaFlexIzquierda {
