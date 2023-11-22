@@ -277,7 +277,7 @@ button svg:hover {
   display: flexbox;
   align-content: center;
   justify-content: center;
-  margin-top: 45px;
+  margin-top: 0px;
   padding: 10px;
   height: 89vh;
 }
@@ -537,18 +537,23 @@ a:active {
   justify-content: flex-end;
 }
 
-@media screen and (min-width: 600px) {
-  .cajaFlex {
+@media screen and (min-width: 0px) {
+  .flexPadre {
+    display: flexbox;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    margin-left: 0px;
   }
-  .articulo {
-    width: 60%;
-    margin: 10px 10px;
+  .flexPadre .cajaFlexIzquierda {
+    display: flex;
+    max-width: 30%;
+    flex: 1 1 auto;
+    margin-left: 20px;
   }
-  .mainContainer {
-    width: 60%;
+  .flexPadre .mainContainer {
+    display: flexbox;
+    max-width: 40%;
+    flex: 4 1 auto;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
