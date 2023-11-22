@@ -154,13 +154,15 @@ button svg:hover {
 }
 //flexPadre//
 .flexPadre {
-  display: flexbox;
+  display: inline-flex;
   flex-direction: row;
+  justify-content: flex-start;
   .cajaFlexIzquierda {
-    flex: 1 1 auto;
+    display: flexbox;
+    margin-left: 20px;
   }
-  .mainContainer {
-    flex: 4 1 auto;
+  .containerMiddle {
+    display: flexbox;
   }
 }
 
@@ -168,7 +170,7 @@ button svg:hover {
 .cajaFlexIzquierda {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 20%;
   height: 150px;
   justify-content: flex-start;
   text-align: left;
@@ -199,20 +201,18 @@ button svg:hover {
   border-top-right-radius: 5%;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
-  .span {
-    padding: 20% 20%;
-  }
 }
 .leftBarContainer {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 100%;
   margin-left: 0px;
   .directorylinks {
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
-    text-align: start;
+    text-align: left;
+    margin-left: 0px;
     .other {
       font-weight: bolder;
       padding-top: 20px;
@@ -238,30 +238,6 @@ button svg:hover {
   }
 }
 
-.containerMiddle {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.cajaFlex {
-  display: flex;
-  flex-direction: column;
-}
-
-.articulo {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  margin: 20px 0;
-  border-top-left-radius: 2%;
-  border-top-right-radius: 2%;
-  border-bottom-left-radius: 2%;
-  border-bottom-right-radius: 2%;
-}
-
 .mainContainer {
   display: flexbox;
   align-content: center;
@@ -269,7 +245,27 @@ button svg:hover {
   margin-top: 0px;
   padding: 10px;
   height: 89vh;
+  margin: 0 auto;
+  .cajaFlex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    .articulo {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      margin: 20px 0;
+      border-top-left-radius: 2%;
+      border-top-right-radius: 2%;
+      border-bottom-left-radius: 2%;
+      border-bottom-right-radius: 2%;
+    }
+  }
 }
+
 .contenedorHotTopics {
   max-width: 45%;
   display: flex;
@@ -352,7 +348,7 @@ a:active {
   flex-flow: flex wrap;
   padding: 10px 0px;
   flex-flow: column;
-  width: 70%;
+  max-width: 100%;
   align-items: center;
   align-content: flex-start;
   justify-content: flex-start;
@@ -369,7 +365,8 @@ a:active {
   .tagsContainer {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    flex-wrap: wrap;
+    max-width: 100%;
     padding: 10px;
     margin-left: 0px;
     justify-content: space-between;
@@ -456,8 +453,9 @@ a:active {
   height: 50px;
   justify-content: center;
   .reactions {
-    width: 100%;
+    max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin-left: 0px;
     align-items: center;
     justify-content: flex-end;
@@ -509,15 +507,31 @@ a:active {
     }
   }
 }
-
-@media screen and (min-width: 00px) {
+@media screen and (max-width: 600px) {
   .flexPadre {
-    display: flexbox;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    .mainContainer {
+      display: flexbox;
+      max-width: 80%;
+      justify-content: center;
+      margin: 45px 40px;
+      margin: 45px;
+    }
+    .cajaFlexIzquierda {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flexPadre {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin-left: 0px;
     .cajaFlexIzquierda {
-      display: flex;
+      display: flexbox;
       max-width: 30%;
       flex: 1 1 auto;
       margin-left: 20px;
@@ -526,7 +540,8 @@ a:active {
       display: flexbox;
       max-width: 40%;
       flex: 4 1 auto;
-      margin-top: 0px;
+      justify-content: center;
+      align-content: center;
     }
   }
 }
