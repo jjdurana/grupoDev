@@ -153,6 +153,80 @@ button svg:hover {
   border-radius: 10px;
 }
 
+//seccion izquierda
+.cajaFlexIzquierda {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 150px;
+  justify-content: flex-start;
+  text-align: left;
+  align-content: center;
+  justify-content: left;
+  margin-top: 45px;
+  padding: 10px;
+  height: 89vh;
+  .login .izquierda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 83px;
+    height: 40px;
+    border-radius: 10xp;
+    color: black;
+  }
+}
+.tarjetaLeft {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  .span {
+    padding: 20% 20%;
+  }
+}
+.leftBarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 0px;
+  .directorylinks {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    text-align: start;
+    .other {
+      font-weight: bolder;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: left;
+      margin-left: 0px;
+    }
+    a {
+      margin-left: 0px;
+    }
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: black;
+      font-size: large;
+    }
+    a:hover {
+      background-color: rgb(235, 236, 253);
+      border-radius: 10px;
+      width: max-content;
+    }
+  }
+}
+
 .containerMiddle {
   width: 90%;
   margin: 0 auto;

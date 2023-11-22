@@ -162,6 +162,82 @@ button svg:hover {
   border-radius: 10px;
 }
 
+.cajaFlexIzquierda {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 150px;
+  justify-content: flex-start;
+  text-align: left;
+  align-content: center;
+  justify-content: left;
+  margin-top: 45px;
+  padding: 10px;
+  height: 89vh;
+}
+.cajaFlexIzquierda .login .izquierda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 83px;
+  height: 40px;
+  border-radius: 10xp;
+  color: black;
+}
+
+.tarjetaLeft {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.tarjetaLeft .span {
+  padding: 20% 20%;
+}
+
+.leftBarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 0px;
+}
+.leftBarContainer .directorylinks {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  text-align: start;
+}
+.leftBarContainer .directorylinks .other {
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  margin-left: 0px;
+}
+.leftBarContainer .directorylinks a {
+  margin-left: 0px;
+}
+.leftBarContainer .directorylinks a:link,
+.leftBarContainer .directorylinks a:visited,
+.leftBarContainer .directorylinks a:active {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+.leftBarContainer .directorylinks a:hover {
+  background-color: rgb(235, 236, 253);
+  border-radius: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .containerMiddle {
   width: 90%;
   margin: 0 auto;
