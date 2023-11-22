@@ -61,7 +61,7 @@ body {
 }
 .logo .imagenLogo {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: auto;
   max-width: 100%;
 }
@@ -166,6 +166,7 @@ button svg:hover {
   display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 }
 .flexPadre .cajaFlexIzquierda {
   display: flexbox;
@@ -278,12 +279,14 @@ button svg:hover {
 }
 
 .contenedorHotTopics {
+  margin-top: 45px;
   max-width: 45%;
   display: flex;
   flex-direction: row;
-  justify-items: flex-start;
+  justify-items: flex-end;
   height: 60px;
   justify-content: flex-start;
+  margin-left: 0%;
 }
 
 .hotTopics {
@@ -351,7 +354,7 @@ a:active {
 }
 .contenedorIcon .iconAuthor {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   border-radius: 50%;
   width: auto;
   max-width: 100%;
@@ -549,6 +552,19 @@ a:active {
   .flexPadre .cajaFlexIzquierda {
     display: none;
   }
+  .flexPadre .cajaFlexDerecha {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flexPadre .cajaFlexIzquierda {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .flexPadre .cajaFlexDerecha {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .flexPadre {
@@ -562,6 +578,7 @@ a:active {
     max-width: 30%;
     flex: 1 1 auto;
     margin-left: 20px;
+    max-width: 25%;
   }
   .flexPadre .mainContainer {
     display: flexbox;
@@ -570,4 +587,74 @@ a:active {
     justify-content: center;
     align-content: center;
   }
-}/*# sourceMappingURL=main.css.map */
+  .flexPadre .cajaFlexDerecha {
+    display: flex;
+    background-color: white;
+    .tarjeta {
+      max-width: 100%;
+      padding: 5%;
+    }
+  }
+  .flexPadre .hotTopics {
+    display: flex;
+  }
+} /*# sourceMappingURL=main.css.map */
+
+.cajaFlexDerecha {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 150px;
+  justify-content: flex-end;
+  text-align: left;
+  align-content: center;
+  justify-content: left;
+  margin-top: 45px;
+  padding: 20px;
+  height: 89vh;
+}
+
+.cajaFlexDerecha li:hover {
+  color: blue;
+}
+.cajaFlexDerecha ul {
+  list-style: none;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.tarjeta {
+  margin-top: 10%;
+  height: 440px;
+  flex-direction: ;
+  max-width: 90%;
+  border: solid rgba(121, 110, 110, 0.589) 1px;
+  border-radius: 10px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.new {
+  background-color: yellow;
+  margin-left: 10px;
+  height: 20px;
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.comentarios {
+  color: rgba(0, 0, 0, 0.541);
+  margin-left: 10px;
+}
+
+.gridt {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.caja1 {
+  grid-column: 1 / 4;
+  background-color: yellow;
+  grid-row: 1 / 4;
+}
